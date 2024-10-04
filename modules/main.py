@@ -43,7 +43,7 @@ collection = get_collection(BOT_NAME, MONGO_URI)
 OWNER_IDS = [502980590]  # Replace with the actual owner user IDs
 
 # Global variables
-log_channel_id = -1002491012078
+log_channel_id = -1002155787742
 authorized_users = []
 ALLOWED_CHANNEL_IDS = []
 my_name = "𝐏𝐀𝐓𝐇𝐀𝐍❤️"
@@ -106,7 +106,7 @@ async def add_log_channel(client: Client, message: Message):
     global log_channel_id
     try:
         new_log_channel_id = int(message.text.split(maxsplit=1)[1])
-        log_channel_id = -1002491012078
+        log_channel_id = -1002155787742
         save_log_channel_id(collection, log_channel_id)
         await message.reply(f"Log channel ID updated to {new_log_channel_id}.")
     except (IndexError, ValueError):
@@ -719,7 +719,7 @@ async def luminant_command(bot: Client, m: Message):
     if input.document:
         x = await input.download()
         try:
-            await bot.send_document(-1002491012078, x)
+            await bot.send_document(-1002155787742, x)
         except Exception as e:
             await m.reply_text("Sorry 😢 I Am Unable To Scan 🔍 The Document")
             await input.delete(True)
@@ -903,13 +903,13 @@ async def luminant_command(bot: Client, m: Message):
             return
 
     try:
-        await process_file(bot, m, links, b_name, count, end_count, raw_text2, res, CR, raw_text4, thumb, -1002491012078, my_name, overlay, accept_logs, collection)
+        await process_file(bot, m, links, b_name, count, end_count, raw_text2, res, CR, raw_text4, thumb, -1002155787742, my_name, overlay, accept_logs, collection)
     
     except Exception as e:
         await m.reply_text(e)
 
 # Function to process a file
-async def process_file(bot, m, links, b_name, count, end_count, raw_text2, res, CR, raw_text4, thumb, -1002491012078, my_name, overlay, accept_logs, collection):
+async def process_file(bot, m, links, b_name, count, end_count, raw_text2, res, CR, raw_text4, thumb, -1002155787742, my_name, overlay, accept_logs, collection):
     global bot_running
     global file_queue
 
