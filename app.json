@@ -13,27 +13,27 @@
     "env": {
         "API_ID": {
             "description": "Enter Your Api Id",
-            "value": "20299588",
+            "value": "23031620",
             "required": true
         },
         "API_HASH": {
             "description": "Enter Your Api Hash",
-            "value": "f550d6179131c293d658f15f8c24f594",
+            "value": "31cb00c1cbe580394778b43105864bca",
             "required": true
         },
         "BOT_TOKEN": {
             "description": "Enter Your Telegram Bot Token",
-            "value": "7022648745:AAFHefiq69tGQ0fhnpwtDgcWCQTUIuhw3Fc",
+            "value": "7790977411:AAEYgZS5xvHRJqH3YMPzv6twCQM3_MToiu4",
             "required": true
         },
         "BOT_NAME": {
             "description": "Enter Your Telegram Bot Name",
-            "value": "lakshay-a-bot",
+            "value": "pathansirtxttovideobot",
             "required": true
         },
         "MONGO_URI": {
             "description": "Enter your MongoDB connection string",
-            "value": "mongodb+srv://KunalUser:9050306314@lakshaykunal.k8d5iac.mongodb.net/?retryWrites=true&w=majority&appName=LakshayKunal",
+            "value": "mongodb+srv://knight_rider:GODGURU12345@knight.jm59gu9.mongodb.net/?retryWrites=true&w=majority",
             "required": true
         }
     },
