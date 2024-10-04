@@ -40,13 +40,13 @@ bot = Client("bot",
 # Get the MongoDB collection for this bot
 collection = get_collection(BOT_NAME, MONGO_URI)
 # Constants
-OWNER_IDS = [7078486618]  # Replace with the actual owner user IDs
+OWNER_IDS = [502980590]  # Replace with the actual owner user IDs
 
 # Global variables
 log_channel_id = -1002491012078
 authorized_users = []
 ALLOWED_CHANNEL_IDS = []
-my_name = "𝐊𝐔𝐍𝐀𝐋❤️"
+my_name = "𝐏𝐀𝐓𝐇𝐀𝐍❤️"
 overlay = None 
 accept_logs = 0
 bot_running = False
@@ -692,7 +692,7 @@ async def set_max_running_time_handler(_, message):
 
 #=================== TXT CALLING COMMAND ==========================
 
-@bot.on_message(filters.command(["joker"]))
+@bot.on_message(filters.command(["pathan"]))
 async def luminant_command(bot: Client, m: Message):
     global bot_running, start_time, total_running_time, max_running_time
     global log_channel_id, my_name, overlay, accept_logs
@@ -778,7 +778,7 @@ async def luminant_command(bot: Client, m: Message):
         raw_text = "1"
         raw_text2 = "720"
         res = "1280x720"
-        CR = '<a href="https://t.me/IamTgJOKER">𝐌𝐑 𝐉𝐎𝐊𝐄𝐑 ❤️</a>'
+        CR = '<a href="https://t.me/ALTAFPATHAN">𝐌𝐑 𝐏𝐀𝐓𝐇𝐀𝐍 ❤️</a>'
         raw_text4 = "df"
         thumb = "no"
       
@@ -850,7 +850,7 @@ async def luminant_command(bot: Client, m: Message):
         raw_text3 = input3.text
         await input3.delete(True)
         if raw_text3 == 'df':
-            CR = '<a href="https://t.me/IamTgJOKER">𝐌𝐑 𝐉𝐎𝐊𝐄𝐑 ❤️</a>'
+            CR = '<a href="https://t.me/ALTAFPATHAN">𝐌𝐑 𝐏𝐀𝐓𝐇𝐀𝐍 ❤️</a>'
         else:
             CR = raw_text3    
         # Asking for thumbnail
