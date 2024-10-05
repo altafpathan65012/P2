@@ -778,7 +778,7 @@ async def luminant_command(bot: Client, m: Message):
         raw_text = "1"
         raw_text2 = "720"
         res = "1280x720"
-        CR = '<a href="https://t.me/IamTgJOKER">𝐌𝐑 𝐉𝐎𝐊𝐄𝐑 ❤️</a>'
+        CR = '<a href="https://t.me/ALTAFPATHAN">𝗣𝗔𝗧𝗛𝗔𝗡❤❤️</a>'
         raw_text4 = "df"
         thumb = "no"
       
@@ -850,7 +850,7 @@ async def luminant_command(bot: Client, m: Message):
         raw_text3 = input3.text
         await input3.delete(True)
         if raw_text3 == 'df':
-            CR = '<a href="https://t.me/IamTgJOKER">𝐌𝐑 𝐉𝐎𝐊𝐄𝐑 ❤️</a>'
+            CR = '<a href="https://t.me/ALTAFPATHAN">𝗣𝗔𝗧𝗛𝗔𝗡❤️</a>'
         else:
             CR = raw_text3    
         # Asking for thumbnail
