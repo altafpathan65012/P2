@@ -1042,6 +1042,13 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                         text = await resp.text()
                         url = re.search(r"(https://.*?playlist.m3u8.*?)\"", text).group(1)
 
+            elif 'media-cdn.classplusapp.com' in url:
+                headers = {'Host': 'api.classplusapp.com', 'x-access-token': 'eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJpZCI6NDcwOTYwODIsIm9yZ0lkIjozNTExODAsInR5cGUiOjEsIm1vYmlsZSI6IjkxODAwNDQ1ODkwNCIsIm5hbWUiOiJzdWppdCB0aXdhcmkiLCJlbWFpbCI6InN1aml0dGl3YXJpMjIxMzA4QGdtYWlsLmM5bSIsImlzSW50ZXJuYXRpb25hbCI6MCwiZGVmYXVsdExhbmd1YWdlIjoiRU4iLCJjb3VudHJ5Q29kZSI6IklOIiwiY291bnRyeUlTTyI6IjkxIiwidGltZXpvbmUiOiJHTVQrNTozMCIsImlzRGl5Ijp0cnVlLCJvcmdDb2RlIjoiYnZqaGkiLCJpc0RpeVN1YmFkbWluIjowLCJmaW5nZXJwcmludElkIjoiMmIzMDFjMzRiODkxZmJhMmE1Y2YyYjYyNDA3NjVhNDIiLCJpYXQiOjE3MjQzMzEwNzcsImV4cCI6MTcyNDkzNTg3N30.0oi58SRgPcKtA-vSoYFBiBh2_dIsGnFnlTak1oaxXZZtAzpEo1omoE5zoc4cim9U', 'user-agent': 'Mobile-Android', 'app-version': '1.4.37.1', 'api-version': '18', 'device-id': '5d0d17ac8b3c9f51', 'device-details': '2848b866799971ca_2848b8667a33216c_SDK-30', 'accept-encoding': 'gzip'}
+                params = (('url', f'{url}'),)
+                response = requests.get('https://api.classplusapp.com/cams/uploader/video/jw-signed-url', headers=headers, params=params)
+                url = response.json()['url']	
+                
+            
             elif "tencdn.classplusapp" in url:
                 headers = {'Host': 'api.classplusapp.com', 'x-access-token': 'eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJpZCI6MTI0NDQyMjIwLCJvcmdJZCI6MTMxNSwidHlwZSI6MSwibW9iaWxlIjoiOTE3NDA0MDM0NjQ3IiwibmFtZSI6Ikt1bmFsICIsImVtYWlsIjoia3VuYWxkYWxhbDAzMDlAZ21haWwuY29tIiwiaXNGaXJzdExvZ2luIjp0cnVlLCJkZWZhdWx0TGFuZ3VhZ2UiOiJFTiIsImNvdW50cnlDb2RlIjoiSU4iLCJpc0ludGVybmF0aW9uYWwiOjAsImlzRGl5Ijp0cnVlLCJsb2dpblZpYSI6Ik90cCIsImZpbmdlcnByaW50SWQiOiI4M2M4ZDczOTAwYzc0NjYzYzI2MGJkMzA1ZDYxOTM0MCIsImlhdCI6MTcxODg3Njg5MSwiZXhwIjoxNzE5NDgxNjkxfQ.tV2t5whgnQwrfWLibVIOHV5JN0iDdQwlqDtVDCT_i1zQy4lhF_G3a0zfz7e5S8re', 'user-agent': 'Mobile-Android', 'app-version': '1.4.37.1', 'api-version': '18', 'device-id': '5d0d17ac8b3c9f51', 'device-details': '2848b866799971ca_2848b8667a33216c_SDK-30', 'accept-encoding': 'gzip'}
                 params = (('url', f'{url}'),)
