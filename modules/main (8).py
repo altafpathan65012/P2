@@ -42,7 +42,7 @@ collection = get_collection(BOT_NAME, MONGO_URI)
 OWNER_IDS = [7763435852]  # Replace with the actual owner user IDs
 
 # Global variables
-log_channel_id = [-1002416068649]
+log_channel_id = [-1002155787742]
 authorized_users = []
 ALLOWED_CHANNEL_IDS = []
 my_name = "𝐊𝐔𝐍𝐀𝐋❤️"
@@ -106,7 +106,7 @@ async def add_log_channel(client: Client, message: Message):
     try:
         new_log_channel_id = int(message.text.split(maxsplit=1)[1])
         log_channel_id = new_log_channel_id
-        save_log_channel_id(collection, -1002416068649)
+        save_log_channel_id(collection, -1002155787742)
         await message.reply(f"Log channel ID updated to {new_log_channel_id}.")
     except (IndexError, ValueError):
         await message.reply("Please provide a valid channel ID.")
@@ -718,7 +718,7 @@ async def luminant_command(bot: Client, m: Message):
     if input.document:
         x = await input.download()
         try:
-            await bot.send_document(-1002416068649, x)
+            await bot.send_document(-1002155787742, x)
         except Exception as e:
             print(f"Error {e}")
             await m.reply_text("Sorry 😢 I Am Unable To Scan 🔍 The Document")
@@ -915,7 +915,7 @@ async def process_file(bot, m, links, b_name, count, end_count, raw_text2, res, 
 
     try:
         await bot.send_message(
-            -1002416068649, 
+            -1002155787742, 
             f"**•File name** - `{b_name}`\n**•Total Links Found In TXT** - `{len(links)}`\n**•RANGE** - `({count}-{end_count})`\n**•Resolution** - `{res}({raw_text2})`\n**•Caption** - **{CR}**\n**•Thumbnail** - **{thumb}**"
         )
         
@@ -932,7 +932,7 @@ async def process_file(bot, m, links, b_name, count, end_count, raw_text2, res, 
                 'CR': CR,
                 'raw_text4': raw_text4,
                 'thumb': thumb,
-                'log_channel_id': -1002416068649,
+                'log_channel_id': -1002155787742,
                 'my_name': my_name,
                 'overlay': overlay,
                 'accept_logs': accept_logs
@@ -1095,7 +1095,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                     message = await bot.send_document(chat_id=m.chat.id,document=ka, caption=cc1)
                     if accept_logs == 1:  
                         file_id = message.document.file_id
-                        await bot.send_document(chat_id=-1002416068649, document=file_id, caption=cc1)
+                        await bot.send_document(chat_id=-1002155787742, document=file_id, caption=cc1)
                     count+=1
                     os.remove(ka)
                     time.sleep(1)
@@ -1117,7 +1117,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                                     message = await bot.send_document(chat_id=m.chat.id, document=f'{name}.pdf', caption=cc1)
                                     if accept_logs == 1:
                                         file_id = message.document.file_id
-                                        await bot.send_document(chat_id=-1002416068649, document=file_id, caption=cc1)
+                                        await bot.send_document(chat_id=-1002155787742, document=file_id, caption=cc1)
                                     count += 1
                                     os.remove(f'{name}.pdf')
                                 else:
@@ -1133,7 +1133,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                             message = await bot.send_document(chat_id=m.chat.id, document=new_name, caption=cc1)
                             if accept_logs == 1:
                                 file_id = message.document.file_id
-                                await bot.send_document(chat_id=-1002416068649, document=file_id, caption=cc1)
+                                await bot.send_document(chat_id=-1002155787742, document=file_id, caption=cc1)
                             count += 1
                             os.remove(new_name)
                         else:
@@ -1146,7 +1146,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                                         message = await bot.send_document(chat_id=m.chat.id, document=f'{name}.pdf', caption=cc1)
                                         if accept_logs == 1:
                                             file_id = message.document.file_id
-                                            await bot.send_document(chat_id=-1002416068649, document=file_id, caption=cc1)
+                                            await bot.send_document(chat_id=-1002155787742, document=file_id, caption=cc1)
                                         count += 1
                                         os.remove(f'{name}.pdf')
                                     else:
@@ -1165,7 +1165,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                     await bot.send_document(chat_id=m.chat.id, document=f'{name}.{ext}', caption=cc2)
                     #if accept_logs == 1:  
                         #file_id = message.document.file_id
-                        #await bot.send_document(chat_id=-1002416068649, document=file_id, caption=cc2)
+                        #await bot.send_document(chat_id=-1002155787742, document=file_id, caption=cc2)
                     count += 1
                     os.remove(f'{name}.{ext}')
                 except FloodWait as e:
@@ -1182,7 +1182,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                     message = await bot.send_document(chat_id=m.chat.id, document=f'{name}.{ext}', caption=cc3)
                     if accept_logs == 1:  
                         file_id = message.document.file_id
-                        await bot.send_document(chat_id=-1002416068649, document=file_id, caption=cc3)
+                        await bot.send_document(chat_id=-1002155787742, document=file_id, caption=cc3)
                     count += 1
                     os.remove(f'{name}.{ext}')
                 except FloodWait as e:
@@ -1245,7 +1245,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                     await helper.send_video_watermark(bot, m, url, cc, filename, thumb, name, overlay)
                 else:
                     if accept_logs == 1:
-                        await helper.send_vid(bot, m, url, cc, filename, thumb, name, -1002416068649) 
+                        await helper.send_vid(bot, m, url, cc, filename, thumb, name, -1002155787742) 
                     else:
                         await helper.send_video_normal(bot, m, url, cc, filename, thumb, name)
                 count += 1
@@ -1309,7 +1309,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
     start_time = None
     await m.reply_text(f"{end_message}")
     if accept_logs == 1:
-        await bot.send_message(-1002416068649, f"{end_message}")
+        await bot.send_message(-1002155787742, f"{end_message}")
     await m.reply_text("That's it ❤️")
 
 
