@@ -413,7 +413,7 @@ async def start(client: Client, msg: Message):
     if msg.from_user.id in authorized_users:
         await start_message.edit_text(
             Data.START.format(msg.from_user.mention) +
-            "Great!, You are a premium member! 🌟 press `/help` in order to use me properly\n\n",
+            "Great!, You are a 𝗣𝗥𝗘𝗠𝗜𝗨𝗠 member! 🌟 press `/help` in order to use me properly\n\n",
             reply_markup=help_button_keyboard
         )
     else:
@@ -435,7 +435,7 @@ async def stop_handler(_, message):
         await message.reply_text("**𝗦𝗧𝗢𝗣𝗣𝗘𝗗**🚦", True)
         os.execl(sys.executable, sys.executable, *sys.argv)
     else:
-        await message.reply_text("Bot is not running.", True)
+        await message.reply_text("Bot is 𝗡𝗢𝗧 running.", True)
 
 
 @bot.on_message(filters.command("check") & filters.create(owner_filter))
