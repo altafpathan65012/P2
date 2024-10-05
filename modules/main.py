@@ -45,7 +45,7 @@ OWNER_IDS = [502980590]  # Replace with the actual owner user IDs
 log_channel_id = [-1002155787742]
 authorized_users = []
 ALLOWED_CHANNEL_IDS = []
-my_name = "𝐊𝐔𝐍𝐀𝐋❤️"
+my_name = "𝗣𝗔𝗧𝗛𝗔𝗡❤️"
 overlay = None 
 accept_logs = 0
 bot_running = False
@@ -414,7 +414,7 @@ async def start(client: Client, msg: Message):
             Data.START.format(msg.from_user.mention) +
             "You are currently using the free version. 🆓\n\n"
             "I'm here to make your life easier by downloading videos from your **.txt** file 📄 and uploading them directly to Telegram!\n\n"
-            "Want to get started? Press /id\n\n💬 Contact @ikunalx to Get The Subscription 🎫 and unlock the full potential of your new bot! 🔓"
+            "Want to get started? Press /id\n\n💬 Contact @ALTAFPATHAN to Get The Subscription 🎫 and unlock the full potential of your new bot! 🔓"
         )
 
 
@@ -1196,7 +1196,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                         f"**🎬 Name » ** `{name}`\n"
                         f"**🔍 Quality » ** `{raw_text2}`\n\n"
                         f"**Processing Physics Wallah (PW) videos may take some time. ⏳**\n\n"
-                        f"╰────⌈**✨ 𝐊𝐔𝐍𝐀𝐋 (@ikunalx) ✨**⌋────╯"
+                        f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@ALTAFPATHAN) ✨**⌋────╯"
                     )
                 elif 'visionias' in url:
                     prog = await m.reply_text(
@@ -1204,7 +1204,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                         f"**🎬 Name » ** `{name}`\n"
                         f"**🔍 Quality » ** `{raw_text2}`\n\n"
                         f"**Downlaoding Vision IAS videos may take some time. ⏳**\n\n"
-                        f"╰────⌈**✨ 𝐊𝐔𝐍𝐀𝐋 (@ikunalx) ✨**⌋────╯"
+                        f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@ALTAFPATHAN) ✨**⌋────╯"
                     )
                 elif 'brightcove' in url:
                     prog = await m.reply_text(
@@ -1212,7 +1212,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                         f"**🎬 Name » ** `{name}`\n"
                         f"**🔍 Quality » ** `{raw_text2}`\n\n"
                         f"**Downlaoding Careerwill (CW) videos may take some time. ⏳**\n\n"
-                        f"╰────⌈**✨ 𝐊𝐔𝐍𝐀𝐋 (@ikunalx) ✨**⌋────╯"
+                        f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@ALTAFPATHAN) ✨**⌋────╯"
                     )
                 elif 'utkarshapp' in url:
                     prog = await m.reply_text(
@@ -1220,7 +1220,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                         f"**🎬 Name » ** `{name}`\n"
                         f"**🔍 Quality » ** `{raw_text2}`\n\n"
                         f"**Downlaoding Utkarsh videos may take some time. ⏳**\n\n"
-                        f"╰────⌈**✨ 𝐊𝐔𝐍𝐀𝐋 (@ikunalx) ✨**⌋────╯"
+                        f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@ALTAFPATHAN) ✨**⌋────╯"
                     )
                 elif 'studyiq' in url:
                     prog = await m.reply_text(
@@ -1228,7 +1228,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                         f"**🎬 Name » ** `{name}`\n"
                         f"**🔍 Quality » ** `{raw_text2}`\n\n"
                         f"**Downlaoding StudyIQ videos may take some time. ⏳**\n\n"
-                        f"╰────⌈**✨ 𝐊𝐔𝐍𝐀𝐋 (@ikunalx) ✨**⌋────╯"
+                        f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@ALTAFPATHAN) ✨**⌋────╯"
                     )
                 else:
                     prog = await m.reply_text(
@@ -1236,7 +1236,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                         f"**🎬 Name » ** `{name}`\n"
                         f"**🔍 Quality » ** `{raw_text2}`\n"
                         f"**🌐 Video Link » ** `{url}`\n\n"
-                        f"╰────⌈**✨ 𝐊𝐔𝐍𝐀𝐋 (@ikunalx) ✨**⌋────╯"
+                        f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@ALTAFPATHAN) ✨**⌋────╯"
                     )
                 res_file = await helper.download_video(url, cmd, name)
                 filename = res_file
@@ -1263,7 +1263,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                 f"**🔍 Quality » ** `{raw_text2}`\n"
                 f"**🌐 URL » ** `{url}`\n\n"
                 f"Please check the URL and try again. 🔄\n\n"
-                f"╰────⌈**✨ 𝐊𝐔𝐍𝐀𝐋 (@ikunalx) ✨**⌋────╯"
+                f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@ALTAFPATHAN) ✨**⌋────╯"
             )
             elif "cpvod" in url:
                 await m.reply_text(
@@ -1272,7 +1272,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                 f"**🔍 Quality » ** `{raw_text2}`\n"
                 f"**🌐 URL » ** `{url}`\n\n"
                 f"Please check the URL and try again. 🔄\n\n"
-                f"╰────⌈**✨ 𝐊𝐔𝐍𝐀𝐋 (@ikunalx) ✨**⌋────╯"
+                f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@ALTAFPATHAN) ✨**⌋────╯"
             )
             elif "vdocipher" in url:
                 await m.reply_text(
@@ -1281,7 +1281,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                 f"**🔍 Quality » ** `{raw_text2}`\n"
                 f"**🌐 URL » ** `{url}`\n\n"
                 f"Please check the URL and try again. 🔄\n\n"
-                f"╰────⌈**✨ 𝐊𝐔𝐍𝐀𝐋 (@ikunalx) ✨**⌋────╯"
+                f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@ALTAFPATHAN) ✨**⌋────╯"
             )
             elif "vimeo" in url:
                 await m.reply_text(
@@ -1290,7 +1290,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                 f"**🔍 Quality » ** `{raw_text2}`\n"
                 f"**🌐 URL » ** `{url}`\n\n"
                 f"Please check the URL and try again. 🔄\n\n"
-                f"╰────⌈**✨ 𝐊𝐔𝐍𝐀𝐋 (@ikunalx) ✨**⌋────╯"
+                f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@ALTAFPATHAN) ✨**⌋────╯"
             )
             else:
                 await m.reply_text(
@@ -1299,7 +1299,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                 f"**🔍 Quality » ** `{raw_text2}`\n"
                 f"**🌐 URL » ** `{url}`\n\n"
                 f"Please check the URL and try again. 🔄\n\n"
-                f"╰────⌈**✨ 𝐊𝐔𝐍𝐀𝐋 (@ikunalx) ✨**⌋────╯"
+                f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@ALTAFPATHAN) ✨**⌋────╯"
             )
             time.sleep(3)
             count += 1
