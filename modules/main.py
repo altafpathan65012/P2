@@ -392,7 +392,7 @@ async def start(client: Client, msg: Message):
     await start_message.edit_text(
         Data.START.format(msg.from_user.mention) +
         "Loading features... ⏳\n\n"
-        "Progress: [❤️❤️❤️🤍🤍🤍🤍🤍🤍🤍] 25%\n\n"
+        "Progress: [🩵🩵🩵🤍🤍🤍🤍🤍🤍🤍] 25%\n\n"
     )
     
     await asyncio.sleep(1)
@@ -406,7 +406,7 @@ async def start(client: Client, msg: Message):
     await start_message.edit_text(
         Data.START.format(msg.from_user.mention) +
         "Checking subscription status... 🔍\n\n"
-        "Progress: [❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥🤍🤍🤍] 75%\n\n"
+        "Progress: [🩵🩵🩵🩵🩵🩵🩵🤍🤍🤍] 75%\n\n"
     )
 
     await asyncio.sleep(1)
@@ -699,7 +699,7 @@ async def set_max_running_time_handler(_, message):
 
 #=================== TXT CALLING COMMAND ==========================
 
-@bot.on_message(filters.command(["pathan"]))
+@bot.on_message(filters.command(["pathan"]) & auth_or_owner_filter)
 async def luminant_command(bot: Client, m: Message):
     global bot_running, start_time, total_running_time, max_running_time
     global log_channel_id, my_name, overlay, accept_logs
