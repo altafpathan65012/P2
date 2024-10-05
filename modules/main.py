@@ -691,7 +691,7 @@ async def set_max_running_time_handler(_, message):
 
 #=================== TXT CALLING COMMAND ==========================
 
-@bot.on_message(filters.command(["joker"]))
+@bot.on_message(filters.command(["pathan"]))
 async def luminant_command(bot: Client, m: Message):
     global bot_running, start_time, total_running_time, max_running_time
     global log_channel_id, my_name, overlay, accept_logs
@@ -1341,7 +1341,7 @@ OR Use /remove_chat
 
 🚀 **General Commands:**
 
-4. **/kunal** - 💡 Type this before sending your **📃.txt** file.
+4. **/pathan** - 💡 Type this before sending your **📃.txt** file.
 
 5. **/start** - 📛 Start the bot and receive a welcome message.
 
@@ -1367,7 +1367,7 @@ OR Use /remove_chat
 
 📌 **Note:** Commands are restricted to the bot owner or authorized users only.
 
-Feel free to contact @ikunalx for further assistance or subscription details.
+Feel free to contact @ALTAFPATHAN for further assistance or subscription details.
 
 ✨ Have fun and happy chatting! ✨
 
@@ -1438,7 +1438,7 @@ OWNER_TEXT = """
 
 🚀 **General Commands:**
 
-12. **/kunal** - 💡 Type this before sending your **📃.txt** file.
+12. **/pathan** - 💡 Type this before sending your **📃.txt** file.
 
 13. **/start** - 📛 Start the bot and receive a welcome message.
 
@@ -1468,7 +1468,7 @@ OWNER_TEXT = """
 
 📌 **Note:** Commands are restricted to the bot owner or authorized users only.
 
-Feel free to contact @ikunalx for further assistance or subscription details.
+Feel free to contact @ALTAFPATHAN for further assistance or subscription details.
 
 ✨ Have fun and happy chatting! ✨
 
@@ -1505,6 +1505,6 @@ keyboard = InlineKeyboardMarkup(
 
 #================== id command button ===========================
 
-BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton(text="Send Here", url=f"https://t.me/ikunalx")]])
+BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton(text="Send Here", url=f"https://t.me/ALTAFPATHAN")]])
 
 bot.run()
