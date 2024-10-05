@@ -369,7 +369,7 @@ async def set_name(client: Client, message: Message):
 #====================== START COMMAND ======================
 class Data:
     START = (
-        "🌟 Welcome {0}! 🌟\n\n"
+        "🌟 𝗪𝗘𝗟𝗖𝗢𝗠𝗘 {0}! 🌟\n\n"
     )
 # Define the start command handler
 @bot.on_message(filters.command("start"))
@@ -420,9 +420,9 @@ async def start(client: Client, msg: Message):
         await asyncio.sleep(2)
         await start_message.edit_text(
             Data.START.format(msg.from_user.mention) +
-            "You are currently using the free version. 🆓\n\n"
+            "You are currently using the 𝗙𝗥𝗘𝗘 version. 🆓\n\n"
             "I'm here to make your life easier by downloading videos from your **.txt** file 📄 and uploading them directly to Telegram!\n\n"
-            "Want to get started? Press /id\n\n💬 Contact @ALTAFPATHAN to Get The Subscription 🎫 and unlock the full potential of your new bot! 🔓"
+            "Want to get started? Press /id\n\n💬 Contact @ALTAFPATHAN to get the 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 🎫 and unlock the full potential of your new bot! 🔓"
         )
 
 
@@ -432,7 +432,7 @@ async def stop_handler(_, message):
     if bot_running:
         bot_running = False
         start_time = None
-        await message.reply_text("**Stopped**🚦", True)
+        await message.reply_text("**𝗦𝗧𝗢𝗣𝗣𝗘𝗗**🚦", True)
         os.execl(sys.executable, sys.executable, *sys.argv)
     else:
         await message.reply_text("Bot is not running.", True)
@@ -699,7 +699,7 @@ async def set_max_running_time_handler(_, message):
 
 #=================== TXT CALLING COMMAND ==========================
 
-@bot.on_message(filters.command(["joker"]))
+@bot.on_message(filters.command(["pathan"]))
 async def luminant_command(bot: Client, m: Message):
     global bot_running, start_time, total_running_time, max_running_time
     global log_channel_id, my_name, overlay, accept_logs
@@ -721,7 +721,7 @@ async def luminant_command(bot: Client, m: Message):
             await m.reply_text("Process not queued. Exiting command.")
             return
 
-    editable = await m.reply_text("📄 Send Your **.txt** file.")
+    editable = await m.reply_text("📄 Send Your **.𝗧𝗫𝗧** file.")
     input: Message = await bot.listen(editable.chat.id)
     if input.document:
         x = await input.download()
@@ -762,7 +762,7 @@ async def luminant_command(bot: Client, m: Message):
 
     #===================== IF ELSE ========================
 
-    await editable.edit(f"🔍 **Do you want to set all values as Default?\nIf YES then type `df` otherwise `no`** ✨")
+    await editable.edit(f"🔍 **Do you want to set all values as Default?\nIf YES then type `df` 𝗢𝗧𝗛𝗘𝗥𝗪𝗜𝗦𝗘 `no`** ✨")
     input5: Message = await bot.listen(chat_id)
     raw_text5 = input5.text
     await input5.delete(True)
@@ -770,7 +770,7 @@ async def luminant_command(bot: Client, m: Message):
 
 #===============================================================
     if raw_text5 == "df":
-        await editable.edit("**📝 Enter the Batch Name or type `df` to use the text filename:**")
+        await editable.edit("**📝 Enter the 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 or type `df` to use the text filename:**")
         input1 = await bot.listen(chat_id)
         raw_text0 = input1.text
         await input1.delete(True)
@@ -796,12 +796,12 @@ async def luminant_command(bot: Client, m: Message):
 
     #===================== Batch Name =====================
 
-        await editable.edit(f"Total links found are **{len(links)}**\n\nSend From where you want to download initial is **1**")
+        await editable.edit(f"Total links found are **{len(links)}**\n\nSend From where you want to download 𝗜𝗡𝗜𝗧𝗜𝗔𝗟 is **1**")
         input0: Message = await bot.listen(chat_id)
         raw_text = input0.text.strip()
         await input0.delete(True)
 
-        await editable.edit("**Enter Batch Name or send df for grabbing it from text filename.**")
+        await editable.edit("**Enter 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 or send df for grabbing it from text filename.**")
         input1: Message = await bot.listen(editable.chat.id)
         raw_text0 = input1.text
         await input1.delete(True)
@@ -816,13 +816,13 @@ async def luminant_command(bot: Client, m: Message):
 
     #===================== Title Name =====================
 
-        await editable.edit(f"🔍 **Do you want to enable the Title Feature? Reply with `YES` or `df`** ✨")
+        await editable.edit(f"🔍 **Do you want to enable the 𝗧𝗜𝗧𝗟𝗘 Feature? Reply with `YES` or `df`** ✨")
         input4: Message = await bot.listen(chat_id)
         raw_text4 = input4.text
         await input4.delete(True)
 
     #===================== QUALITY =================================
-        await editable.edit("**Enter resolution:**\n\n144\n240\n360\n480\n720\n1080\n1440\n2160\n4320\n\n**Please Choose Quality**\n\nor Send `df` for default Quality\n\n")
+        await editable.edit("**Enter resolution:**\n\n144\n240\n360\n480\n720\n1080\n1440\n2160\n4320\n\n**Please Choose 𝗤𝗨𝗔𝗟𝗜𝗧𝗜𝗬**\n\nor Send `df` for default Quality\n\n")
         input2: Message = await bot.listen(chat_id)
         if input2.text.lower() == "df": # Check if the input is "df" (case-insensitive)
             raw_text2 = "720"
@@ -853,7 +853,7 @@ async def luminant_command(bot: Client, m: Message):
         except Exception:
             res = "UN"
         
-        await editable.edit("**Enter your name or send `df` to use default. 📝**")
+        await editable.edit("**Enter 𝗬𝗢𝗨𝗥 𝗡𝗔𝗠𝗘 or send `df` to use default. 📝**")
         input3: Message = await bot.listen(chat_id)
         raw_text3 = input3.text
         await input3.delete(True)
@@ -862,7 +862,7 @@ async def luminant_command(bot: Client, m: Message):
         else:
             CR = raw_text3    
         # Asking for thumbnail
-        await editable.edit("Now upload the **Thumbnail Image** or send `no` or `df` for default thumbnail 🖼️")
+        await editable.edit("Now upload the **𝗧𝗛𝗨𝗠𝗕𝗡𝗔𝗜𝗟 𝗜𝗠𝗔𝗚𝗘** or send `no` or `df` for default thumbnail 🖼️")
         input6 = await bot.listen(chat_id)
 
         if input6.photo:
