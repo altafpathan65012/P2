@@ -422,7 +422,7 @@ async def start(client: Client, msg: Message):
             Data.START.format(msg.from_user.mention) +
             "You are currently using the 𝗙𝗥𝗘𝗘 version. 🆓\n\n"
             "I'm here to make your life easier by downloading videos from your **.txt** file 📄 and uploading them directly to Telegram!\n\n"
-            "Want to get started? Press /id\n\n💬 Contact @ALTAFPATHAN to get the 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 🎫 and unlock the full potential of your new bot! 🔓"
+            "Want to get started? Press /id\n\n💬 Contact @Savebypathanloginbot to get the 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 🎫 and unlock the full potential of your new bot! 🔓"
         )
 
 
@@ -1219,7 +1219,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                         f"**🎬 Name » ** `{name}`\n"
                         f"**🔍 Quality » ** `{raw_text2}`\n\n"
                         f"**Processing Physics Wallah (PW) videos may take some time. ⏳**\n\n"
-                        f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@ALTAFPATHAN) ✨**⌋────╯"
+                        f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@Savebypathanloginbot) ✨**⌋────╯"
                     )
                 elif 'visionias' in url:
                     prog = await m.reply_text(
@@ -1227,7 +1227,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                         f"**🎬 Name » ** `{name}`\n"
                         f"**🔍 Quality » ** `{raw_text2}`\n\n"
                         f"**Downlaoding Vision IAS videos may take some time. ⏳**\n\n"
-                        f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@ALTAFPATHAN) ✨**⌋────╯"
+                        f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@Savebypathanloginbot) ✨**⌋────╯"
                     )
                 elif 'brightcove' in url:
                     prog = await m.reply_text(
@@ -1235,7 +1235,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                         f"**🎬 Name » ** `{name}`\n"
                         f"**🔍 Quality » ** `{raw_text2}`\n\n"
                         f"**Downlaoding Careerwill (CW) videos may take some time. ⏳**\n\n"
-                        f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@ALTAFPATHAN) ✨**⌋────╯"
+                        f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@Savebypathanloginbot) ✨**⌋────╯"
                     )
                 elif 'utkarshapp' in url:
                     prog = await m.reply_text(
@@ -1243,7 +1243,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                         f"**🎬 Name » ** `{name}`\n"
                         f"**🔍 Quality » ** `{raw_text2}`\n\n"
                         f"**Downlaoding Utkarsh videos may take some time. ⏳**\n\n"
-                        f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@ALTAFPATHAN) ✨**⌋────╯"
+                        f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@Savebypathanloginbot) ✨**⌋────╯"
                     )
                 elif 'studyiq' in url:
                     prog = await m.reply_text(
@@ -1251,7 +1251,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                         f"**🎬 Name » ** `{name}`\n"
                         f"**🔍 Quality » ** `{raw_text2}`\n\n"
                         f"**Downlaoding StudyIQ videos may take some time. ⏳**\n\n"
-                        f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@ALTAFPATHAN) ✨**⌋────╯"
+                        f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@Savebypathanloginbot) ✨**⌋────╯"
                     )
                 else:
                     prog = await m.reply_text(
@@ -1259,7 +1259,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                         f"**🎬 Name » ** `{name}`\n"
                         f"**🔍 Quality » ** `{raw_text2}`\n"
                         f"**🌐 Video Link » ** `{url}`\n\n"
-                        f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@ALTAFPATHAN) ✨**⌋────╯"
+                        f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@Savebypathanloginbot) ✨**⌋────╯"
                     )
                 res_file = await helper.download_video(url, cmd, name)
                 filename = res_file
@@ -1286,7 +1286,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                 f"**🔍 Quality » ** `{raw_text2}`\n"
                 f"**🌐 URL » ** `{url}`\n\n"
                 f"Please check the URL and try again. 🔄\n\n"
-                f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@ALTAFPATHAN) ✨**⌋────╯"
+                f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@Savebypathanloginbot) ✨**⌋────╯"
             )
             elif "cpvod" in url:
                 await m.reply_text(
@@ -1295,7 +1295,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                 f"**🔍 Quality » ** `{raw_text2}`\n"
                 f"**🌐 URL » ** `{url}`\n\n"
                 f"Please check the URL and try again. 🔄\n\n"
-                f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@ALTAFPATHAN) ✨**⌋────╯"
+                f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@Savebypathanloginbot) ✨**⌋────╯"
             )
             elif "vdocipher" in url:
                 await m.reply_text(
@@ -1304,7 +1304,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                 f"**🔍 Quality » ** `{raw_text2}`\n"
                 f"**🌐 URL » ** `{url}`\n\n"
                 f"Please check the URL and try again. 🔄\n\n"
-                f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@ALTAFPATHAN) ✨**⌋────╯"
+                f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@Savebypathanloginbot) ✨**⌋────╯"
             )
             elif "vimeo" in url:
                 await m.reply_text(
@@ -1313,7 +1313,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                 f"**🔍 Quality » ** `{raw_text2}`\n"
                 f"**🌐 URL » ** `{url}`\n\n"
                 f"Please check the URL and try again. 🔄\n\n"
-                f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@ALTAFPATHAN) ✨**⌋────╯"
+                f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@Savebypathanloginbot) ✨**⌋────╯"
             )
             else:
                 await m.reply_text(
@@ -1322,7 +1322,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                 f"**🔍 Quality » ** `{raw_text2}`\n"
                 f"**🌐 URL » ** `{url}`\n\n"
                 f"Please check the URL and try again. 🔄\n\n"
-                f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@ALTAFPATHAN) ✨**⌋────╯"
+                f"╰────⌈**✨ 𝗣𝗔𝗧𝗛𝗔𝗡 (@Savebypathanloginbot) ✨**⌋────╯"
             )
             time.sleep(3)
             count += 1
@@ -1390,7 +1390,7 @@ OR Use /remove_chat
 
 📌 **Note:** Commands are restricted to the bot owner or authorized users only.
 
-Feel free to contact @ALTAFPATHAN for further assistance or subscription details.
+Feel free to contact @Savebypathanloginbot for further assistance or subscription details.
 
 ✨ Have fun and happy chatting! ✨
 
@@ -1491,7 +1491,7 @@ OWNER_TEXT = """
 
 📌 **Note:** Commands are restricted to the bot owner or authorized users only.
 
-Feel free to contact @ALTAFPATHAN for further assistance or subscription details.
+Feel free to contact @Savebypathanloginbot for further assistance or subscription details.
 
 ✨ Have fun and happy chatting! ✨
 
@@ -1528,6 +1528,6 @@ keyboard = InlineKeyboardMarkup(
 
 #================== id command button ===========================
 
-BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton(text="Send Here", url=f"https://t.me/ALTAFPATHAN")]])
+BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton(text="Send Here", url=f"https://t.me/Savebypathanloginbot")]])
 
 bot.run()
