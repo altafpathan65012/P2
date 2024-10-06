@@ -699,7 +699,7 @@ async def set_max_running_time_handler(_, message):
 
 #=================== TXT CALLING COMMAND ==========================
 
-@bot.on_message(filters.command(["pathan"]) & auth_or_owner_filter)
+@bot.on_message(filters.command(["pathan"]) & auth_or_owner_filter_or_auth_channel_filter)
 async def luminant_command(bot: Client, m: Message):
     global bot_running, start_time, total_running_time, max_running_time
     global log_channel_id, my_name, overlay, accept_logs
@@ -858,7 +858,7 @@ async def luminant_command(bot: Client, m: Message):
         raw_text3 = input3.text
         await input3.delete(True)
         if raw_text3 == 'df':
-            CR = '<a href="https://t.me/ALTAFPATHAN">𝗣𝗔𝗧𝗛𝗔𝗡❤️</a>'
+            CR = '<a href="@Savebypathanloginbot">𝗣𝗔𝗧𝗛𝗔𝗡❤️</a>'
         else:
             CR = raw_text3    
         # Asking for thumbnail
