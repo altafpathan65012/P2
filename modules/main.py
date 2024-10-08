@@ -422,7 +422,7 @@ async def start(client: Client, msg: Message):
             Data.START.format(msg.from_user.mention) +
             "You are currently using the 𝗙𝗥𝗘𝗘 version. 🆓\n\n"
             "I'm here to make your life easier by downloading videos from your **.txt** file 📄 and uploading them directly to Telegram!\n\n"
-            "Want to get started? Press /id\n\n💬 Contact @ALTAFPATHAN to get the 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 🎫 and unlock the full potential of your new bot! 🔓"
+            "Want to get started? 𝗣𝗥𝗘𝗦𝗦 /id\n\n💬 Contact @DRMHELPBOT to get the 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 🎫 and unlock the full potential of your new bot! 🔓"
         )
 
 
