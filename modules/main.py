@@ -786,7 +786,7 @@ async def luminant_command(bot: Client, m: Message):
         raw_text = "1"
         raw_text2 = "720"
         res = "1280x720"
-        CR = '<a href="http://t.me/Lets_Help_Official">𓆩 𝙇𝙚𝙩'𝙨 𝙃𝙚𝙡𝙥 𓆪</a>'
+        CR = '<a href="http://t.me/Lets_Help_Official">𓆩 𝙇𝙚𝙩𝙨 𝙃𝙚𝙡𝙥 𓆪</a>'
         raw_text4 = "df"
         thumb = "no"
       
