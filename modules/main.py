@@ -786,7 +786,7 @@ async def luminant_command(bot: Client, m: Message):
         raw_text = "1"
         raw_text2 = "720"
         res = "1280x720"
-        CR = '<a href="http://t.me/DRMHELPBOT">ɪ ᴅᴏɴᴛ ᴋɴᴏᴡ 🖕</a>'
+        CR = '<a href="http://t.me/Lets_Help_Official">𓆩 𝙇𝙚𝙩'𝙨 𝙃𝙚𝙡𝙥 𓆪</a>'
         raw_text4 = "df"
         thumb = "no"
       
@@ -825,7 +825,7 @@ async def luminant_command(bot: Client, m: Message):
         await editable.edit("**Enter resolution:**\n\n144\n240\n360\n480\n720\n1080\n1440\n2160\n4320\n\n**Please Choose 𝗤𝗨𝗔𝗟𝗜𝗧𝗜𝗬**\n\nor Send `df` for default Quality\n\n")
         input2: Message = await bot.listen(chat_id)
         if input2.text.lower() == "df": # Check if the input is "df" (case-insensitive)
-            raw_text2 = "720"
+            raw_text2 = "480"
         else:
             raw_text2 = input2.text
         await input2.delete(True)
@@ -858,7 +858,7 @@ async def luminant_command(bot: Client, m: Message):
         raw_text3 = input3.text
         await input3.delete(True)
         if raw_text3 == 'df':
-            CR = '<a href="http://t.me/DRMHELPBOT">ɪ ᴅᴏɴᴛ ᴋɴᴏᴡ 🖕</a>'
+            CR = '<a href="http://t.me/Lets_Help_Official">𓆩 𝙇𝙚𝙩'𝙨 𝙃𝙚𝙡𝙥 𓆪</a>'
         else:
             CR = raw_text3    
         # Asking for thumbnail
