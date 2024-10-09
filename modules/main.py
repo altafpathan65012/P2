@@ -858,7 +858,7 @@ async def luminant_command(bot: Client, m: Message):
         raw_text3 = input3.text
         await input3.delete(True)
         if raw_text3 == 'df':
-            CR = '<a href="http://t.me/Lets_Help_Official">𓆩 𝙇𝙚𝙩'𝙨 𝙃𝙚𝙡𝙥 𓆪</a>'
+            CR = '<a href="http://t.me/Lets_Help_Official">𓆩 𝙇𝙚𝙩𝙨 𝙃𝙚𝙡𝙥 𓆪</a>'
         else:
             CR = raw_text3    
         # Asking for thumbnail
