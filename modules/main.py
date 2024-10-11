@@ -1058,7 +1058,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
                 response = requests.get('https://api.classplusapp.com/cams/uploader/video/jw-signed-url', headers=headers, params=params)                
                 url = response.json()['url']
 
-            elif "tencdn.classplusapp" in url or "appx1.arvind.eu.org" in url or "media-cdn.classplusapp" in url:
+            elif "tencdn.classplusapp" in url or "media-cdn-alisg.classplusapp.com" in url or "media-cdn.classplusapp" in url:
              headers = {'Host': 'api.classplusapp.com', 'x-access-token': 'eyJjb3Vyc2VJZCI6IjQ1NjY4NyIsInR1dG9ySWQiOm51bGwsIm9yZ0lkIjo0ODA2MTksImNhdGVnb3J5SWQiOm51bGx9', 'user-agent': 'Mobile-Android', 'app-version': '1.4.37.1', 'api-version': '18', 'device-id': '5d0d17ac8b3c9f51', 'device-details': '2848b866799971ca_2848b8667a33216c_SDK-30', 'accept-encoding': 'gzip'}
              params = (('url', f'{url}'),)
              response = requests.get('https://api.classplusapp.com/cams/uploader/video/jw-signed-url', headers=headers, params=params)
