@@ -699,7 +699,7 @@ async def set_max_running_time_handler(_, message):
 
 #=================== TXT CALLING COMMAND ==========================
 
-@bot.on_message(filters.command(["pathan"]) & auth_owner_channel_filter)
+@bot.on_message(filters.command(["txt"]) & auth_owner_channel_filter)
 async def luminant_command(bot: Client, m: Message):
     global bot_running, start_time, total_running_time, max_running_time
     global log_channel_id, my_name, overlay, accept_logs
@@ -786,7 +786,7 @@ async def luminant_command(bot: Client, m: Message):
         raw_text = "1"
         raw_text2 = "720"
         res = "1280x720"
-        CR = '<a href="http://t.me/DRMHELPBOT">ɪ ᴅᴏɴᴛ ᴋɴᴏᴡ 🖕</a>'
+        CR = '<a href="http://t.me/AJJEJUR6EYWYWY2">ɪ ᴅᴏɴᴛ ᴋɴᴏᴡ 🖕</a>'
         raw_text4 = "df"
         thumb = "no"
       
@@ -1404,7 +1404,7 @@ OR Use /remove_chat
 
 🚀 **General Commands:**
 
-4. **/pathan** - 💡 Type this before sending your **📃.txt** file.
+4. **/txt** - 💡 Type this before sending your **📃.txt** file.
 
 5. **/start** - 📛 Start the bot and receive a welcome message.
 
@@ -1501,7 +1501,7 @@ OWNER_TEXT = """
 
 🚀 **General Commands:**
 
-12. **/pathan** - 💡 Type this before sending your **📃.txt** file.
+12. **/txt** - 💡 Type this before sending your **📃.txt** file.
 
 13. **/start** - 📛 Start the bot and receive a welcome message.
 
