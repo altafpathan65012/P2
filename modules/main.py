@@ -53,7 +53,7 @@ OWNER_IDS = [502980590]  # Replace with the actual owner user IDs
 log_channel_id = [-1002155787742]
 authorized_users = []
 ALLOWED_CHANNEL_IDS = []
-my_name = "𝗣𝗔𝗧𝗛𝗔𝗡❤️"
+my_name = "𝐈 𝐃𝐎𝐍𝐓 𝐊𝐍𝐎𝐖❤️"
 overlay = None 
 accept_logs = 0
 bot_running = False
@@ -762,7 +762,7 @@ async def luminant_command(bot: Client, m: Message):
 
     #===================== IF ELSE ========================
 
-    await editable.edit(f"🔍 **Do you want to set all values as Default?\nIf YES then type `df` 𝗢𝗧𝗛𝗘𝗥𝗪𝗜𝗦𝗘 `no`** ✨")
+    await editable.edit(f"🔍 **Do you want to set all values as 𝗗𝗘𝗙𝗔𝗨𝗟𝗧 ?\nIf YES then type `df` 𝗢𝗧𝗛𝗘𝗥𝗪𝗜𝗦𝗘 `no`** ✨")
     input5: Message = await bot.listen(chat_id)
     raw_text5 = input5.text
     await input5.delete(True)
@@ -786,7 +786,7 @@ async def luminant_command(bot: Client, m: Message):
         raw_text = "1"
         raw_text2 = "720"
         res = "1280x720"
-        CR = '<a href="http://t.me/AJJEJUR6EYWYWY2">ɪ ᴅᴏɴᴛ ᴋɴᴏᴡ 🖕</a>'
+        CR = '<a href="tg://settings">ɪ ᴅᴏɴᴛ ᴋɴᴏᴡ🖕</a>'
         raw_text4 = "df"
         thumb = "no"
       
@@ -858,7 +858,7 @@ async def luminant_command(bot: Client, m: Message):
         raw_text3 = input3.text
         await input3.delete(True)
         if raw_text3 == 'df':
-            CR = '<a href="http://t.me/DRMHELPBOT">ɪ ᴅᴏɴᴛ ᴋɴᴏᴡ 🖕</a>'
+            CR = '<a href="tg://settings">ɪ ᴅᴏɴᴛ ᴋɴᴏᴡ 🖕</a>'
         else:
             CR = raw_text3    
         # Asking for thumbnail
